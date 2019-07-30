@@ -1,4 +1,4 @@
-/* ===================================== 
+/* =====================================
    Public API Request
 ======================================== */
 
@@ -14,13 +14,16 @@ html, body {
 }
 
 body {
-    font-family: "Nunito", sans-serif;
+		/* Font changed to Dosis*/
+    font-family: 'Dosis', sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+		/* background-color changed to #007B76 */
+    background: url(/images/geometric-background.png);
 }
 
 header {
     padding: 15px 5px 5px;
+    background: url(/images/bottomgeometric-background.png)
 }
 
 .header-inner-container {
@@ -29,22 +32,33 @@ header {
 }
 
 header h1 {
+		/* font changed to Staatliches*/
+		font-family: 'Staatliches', cursive;
     font-size: 1.25em;
-    color: rgba(50, 50, 50, 0.9);
+		/* color changed to white*/
+    color: white;
     margin-top: 35px;
+}
+
+h1:hover {
+  color: #FEE136;
 }
 
 .search-input {
     padding: 0.4rem 1rem;
-    border: 1px solid rgba(200, 200, 200, 0.9);
+		/*changed border color*/
+    border: 1px solid black;
     border-radius: 0.25rem 0 0 0.25rem ;
     max-width: 20rem;
-    transition: .4s ease-out;
+		/*increased speed*/
+    transition: .1s ease-out;
     outline: none;
 }
 
 .search-input:active, .search-input:hover, .search-input:focus {
-    border: 1px solid rgba(50, 50, 50, 0.9);
+	  /*changed border width, color*/
+    border: 2px solid black;
+    background: #FEE136;
 }
 
 .search-submit {
@@ -52,18 +66,21 @@ header h1 {
     height: 33px;
     background: rgba(245, 245, 245, 0.9);
     border-radius: 0 0.25rem 0.25rem 0;
-    border: 1px solid rgba(200, 200, 200, 0.9);
-    transition: .4s ease-out;
+		/*changed border color*/
+    border: 1px solid black;
+		/*increased speed*/
+    transition: .1s ease-out;
     outline: none;
 }
 
 .search-submit:active, .search-submit:hover, .search-submit:focus {
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(50, 50, 50, 0.9);
+		/*changed border width, color*/
+    border: 2px solid black;
 }
 
 
-/* ===================================== 
+/* =====================================
    Gallery
 ======================================== */
 
@@ -76,7 +93,7 @@ header h1 {
     max-width: 1200px;
     margin: auto;
 }
-  
+
 .card {
     display: flex;
     flex-direction: row;
@@ -87,17 +104,23 @@ header h1 {
     max-width: 360px;
     margin: 10px 10px 20px;
     padding: 10px;
-    background: rgba(245, 245, 245, 0.9);
-    border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
-    transition: .4s ease-out;
+		/* Background changed */
+    background: url(/images/bottomgeometric-background.png);
+    /* Border radius */
+    border-radius: 1em;
+		/* Border changed */
+    border: 2px solid white;
     overflow: hidden;
+		
 }
+
 
 .card-img {
     width: 95px;
     margin: 10px 15px auto 10px;
     border-radius: 50%;
+		/* added border */
+		border: 2px solid white;
 }
 
 .card-info-container {
@@ -110,9 +133,9 @@ header h1 {
 
 .card-text {
     font-size: 0.9em;
-    color: rgba(50, 50, 50, 0.7);
+    color: black;
     margin: 7px auto;
-    transition: .4s ease-out;
+    
 }
 
 .cap {
@@ -120,7 +143,7 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Modal
 ======================================== */
 
@@ -140,10 +163,12 @@ header h1 {
     min-height: 415px;
     margin: 10px auto auto;
     padding-bottom: 15px;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
-    transition: .4s ease-out;
+    /* Changed Background*/
+    background: url(/images/geometric-background.png);
+    border-radius: 1em;
+		/* Border changed */
+    border: 3px solid white;
+    
 }
 
 .modal-close-btn {
@@ -152,16 +177,22 @@ header h1 {
     right: 15px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(0, 0, 0, 0.8);
+		/* Background changed */
+    background:#FEE136;
     outline: none;
     border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    border: 2px solid white;
+}
+.modal-close-btn:hover {
+  background: white;
+  color: black;
 }
 
 .modal-img {
     width: 150px;
     margin-top: 35px;
     border-radius: 50%;
+		border: 3px solid white;
 }
 
 .modal-name {
@@ -169,14 +200,18 @@ header h1 {
 }
 
 .modal-text {
-    color: rgba(50, 50, 50, 0.7);
+    color:black;
     margin: 10px;
+		/* Capitalize */
+		text-transform: capitalize;
 }
 
 .modal hr {
     width: 75%;
     margin: 25px auto 30px;
-    border-color: rgba(200, 200, 200, 0.2);
+		/* Border changed */
+    border-color: white;
+    size: 3px;
 }
 
 .modal-btn-container {
@@ -188,9 +223,10 @@ header h1 {
     max-width: 420px;
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
+    background: url(/images/bottomgeometric-background.png);
+    border-radius: 1em;
+		/* Border changed */
+    border: 3px solid white;
 }
 
 
@@ -201,18 +237,25 @@ header h1 {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
     padding: 0.75em 1.5em;
-    background: rgba(0, 0, 0, 0.8);
+		/* Background changed */
+    background:#FEE136;
     border-radius: 0.35em;
     transition: .4s ease-out;
     outline: none;
+		/* Border added */
+		border: 2px solid white;
   }
-  
 
-/* ===================================== 
+  input {
+background: url(/images/bottomgeometric-background.png);
+  }
+
+
+/* =====================================
    Media Queries
 ======================================== */
 
-/* ===================================== 
+/* =====================================
    Tablet
 ======================================== */
 
@@ -240,24 +283,24 @@ header h1 {
 }
 
 
-/* ===================================== 
+/* =====================================
    Desktop
-   Hover styles on desktop 
+   Hover styles on desktop
 ======================================== */
 
 @media (min-width: 1024px) {
 
     .card:hover {
-        background: rgba(255, 255, 255, 1);
+      background: #FEE136;
         border: 1px solid rgba(50, 50, 50, 0.9);
     }
 
     .card:hover .card-text {
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 
     .btn:hover {
         background: rgba(255, 255, 255, 1);
-        color: rgba(25, 25, 25, 1); 
+        color: rgba(25, 25, 25, 1);
     }
 }
