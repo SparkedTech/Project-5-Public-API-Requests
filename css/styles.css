@@ -18,12 +18,12 @@ body {
     font-family: 'Dosis', sans-serif;
     text-align: center;
 		/* background-color changed to #007B76 */
-    background: url(./images/geometric-background.png);
+    background: src='/images/geometric-background.png';
 }
 
 header {
     padding: 15px 5px 5px;
-    background: url(./images/bottomgeometric-background.png)
+    background: src ='/images/bottomgeometric-background.png';
 }
 
 .header-inner-container {
@@ -105,7 +105,7 @@ h1:hover {
     margin: 10px 10px 20px;
     padding: 10px;
 		/* Background changed */
-    background: url(./images/bottomgeometric-background.png);
+    background: src= '/images/bottomgeometric-background.png';
     /* Border radius */
     border-radius: 1em;
 		/* Border changed */
@@ -164,7 +164,7 @@ h1:hover {
     margin: 10px auto auto;
     padding-bottom: 15px;
     /* Changed Background*/
-    background: url(./images/geometric-background.png);
+    background: src= '/images/geometric-background.png';
     border-radius: 1em;
 		/* Border changed */
     border: 3px solid white;
@@ -223,7 +223,7 @@ h1:hover {
     max-width: 420px;
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
-    background: url(./images/bottomgeometric-background.png);
+    background: src= '/images/bottomgeometric-background.png';
     border-radius: 1em;
 		/* Border changed */
     border: 3px solid white;
@@ -247,7 +247,7 @@ h1:hover {
   }
 
   input {
-background: url(./images/bottomgeometric-background.png);
+background: src ='/images/bottomgeometric-background.png)';
   }
 
 
