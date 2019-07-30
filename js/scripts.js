@@ -29,7 +29,10 @@ let pos = 0; // Index of card clicked on
 
 
 
-                                             /* GET data and call functions on success */
+
+
+/* GET data and call functions on success */
+
 $.ajax({
   url:
     "https://randomuser.me/api/?results=12&gender=female&nat=gb&inc=name,location,email,dob,cell,picture&noinfo",
@@ -45,7 +48,11 @@ $.ajax({
   }
 });
 
-                                                   /* Create and add the modal screen */
+
+
+
+
+/* Create and add the modal screen */
 
 function modalInfo(item) {
   modal = `<div class="modal-container">
@@ -77,14 +84,20 @@ function modalInfo(item) {
   return $(modal);
 }
 
-                                                /* Save data to a separate array */
+
+
+/* Save data to a separate array */
 
 function cardArray(data) {
   users = data;
 }
 
 
-                                                  /* Prints the user data to the screen */
+
+
+
+
+/* Prints the user data to the screen */
 
 function createUsers(users) {
   let listItem = "";
@@ -115,7 +128,11 @@ function createUsers(users) {
 
 
 
-                                              /* Update UserData in Modal*/
+                                             
+
+
+
+/* Update UserData in Modal*/
 function updateData(nr) {
   let item = users[nr];
 
@@ -147,7 +164,13 @@ function updateData(nr) {
 
 
 
-                                                   /* Open modal with right information*/
+
+
+
+
+
+
+/* Open modal with right information*/
 
 $("#gallery").on("click", ".card", function() {
   // Get current card index
@@ -160,7 +183,11 @@ $("#gallery").on("click", ".card", function() {
   $(".modal-container").show();
 });
 
-                                                                /* Close modal */
+
+
+
+
+/* Close modal */
 
 function modalButton() {
   $("#modal-close-btn").on("click", function() {
@@ -168,7 +195,11 @@ function modalButton() {
   });
 }
 
-                                                                  /*Toggle through modals*/
+
+
+
+
+/*Toggle through modals*/
 
 function toggle() {
   $(".modal-btn-container").on("click", ".btn", function() {

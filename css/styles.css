@@ -1,6 +1,4 @@
-/* =====================================
-   Public API Request
-======================================== */
+/* Public API Request*/
 
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -15,7 +13,7 @@ html, body {
 
 body {
     text-align: center;
-		/* background-color changed to #007B76 */
+		/* changed background to an image & covered whole body*/
     background: url(../images/geometric-background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -25,7 +23,7 @@ body {
 
 header {
     padding: 15px 5px 5px;
-   	/* color changed to white*/
+   	/* changed background to an image & covered whole header*/
     background: url(../images/geometric-background1.png);
     border-bottom: 2px solid white;
 }
@@ -36,7 +34,7 @@ header {
 }
 
 header h1 {
-		/* font changed to Staatliches*/
+		/* changed the font */
 		font-family: 'Staatliches', cursive;
     font-size: 1.25em;
 		/* color changed to white*/
@@ -45,20 +43,14 @@ header h1 {
 }
 
 
-	/* color changed to white*/
-h1:hover { 
-  color: #FEE136;
-}
-
-	/* color changed to white*/
+	
 h3, p.card-text {
+  /* changed text famili of h3 & p */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
 
-/* =====================================
-   Gallery
-======================================== */
+/* Gallery */
 
 .gallery {
     display: flex;
@@ -80,11 +72,11 @@ h3, p.card-text {
     max-width: 360px;
     margin: 10px 10px 20px;
     padding: 10px;
-		/* Background changed */
+		/* changed background of card to none */
     background:none; 
-    /* Border radius */
+    /* changed the card border radius */
     border-radius: 1em;
-		/* Border changed */
+		/* give card a white border */
     border: 2px solid white;
     overflow: hidden;
 		
@@ -95,7 +87,7 @@ h3, p.card-text {
     width: 95px;
     margin: 10px 15px auto 10px;
     border-radius: 50%;
-		/* added border */
+		/* added border on card image */
 		border: 2px solid white;
 }
 
@@ -122,9 +114,7 @@ h3, p.card-text {
 
 
 
-/* =====================================
-   Modal
-======================================== */
+/* Modal */
 
 .modal-container {
     position: fixed;
@@ -142,10 +132,10 @@ h3, p.card-text {
     min-height: 415px;
     margin: 10px auto auto;
     padding-bottom: 15px;
-    /* Changed Background*/
+    /* changed background of the modal to an image*/
     background: url(../images/geometric-background.png);
     border-radius: 1em;
-		/* Border changed */
+		/* gave the modal a white border */
     border: 3px solid white;
     
 }
@@ -156,7 +146,7 @@ h3, p.card-text {
     right: 15px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.9);
-		/* Background changed */
+		/* changed background */
     background:#FEE136;
     outline: none;
     border-radius: 0.25em;
@@ -181,14 +171,14 @@ h3, p.card-text {
 .modal-text {
     color:black;
     margin: 10px;
-		/* Capitalize */
+		/* capitalize */
 		text-transform: capitalize;
 }
 
 .modal hr {
     width: 75%;
     margin: 25px auto 30px;
-		/* Border changed */
+		/* border changed */
     border-color: white;
     size: 3px;
 }
@@ -204,7 +194,7 @@ h3, p.card-text {
     margin: 10px auto auto;
     background: url(../images/bottomgeometric-background.png);
     border-radius: 1em;
-		/* Border changed */
+		/* border changed */
     border: 3px solid white;
 }
 
