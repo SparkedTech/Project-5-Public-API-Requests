@@ -14,16 +14,20 @@ html, body {
 }
 
 body {
-		/* Font changed to Dosis*/
-    font-family: 'Dosis', sans-serif;
     text-align: center;
 		/* background-color changed to #007B76 */
-    background: src='/images/geometric-background.png';
+    background: url('/images/geometric-background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
     padding: 15px 5px 5px;
-    background: src ='/images/bottomgeometric-background.png';
+   	/* color changed to white*/
+    background: url('/images/geometric-background1.png');
+    border-bottom: 2px solid white;
 }
 
 .header-inner-container {
@@ -40,43 +44,15 @@ header h1 {
     margin-top: 35px;
 }
 
-h1:hover {
+
+	/* color changed to white*/
+h1:hover { 
   color: #FEE136;
 }
 
-.search-input {
-    padding: 0.4rem 1rem;
-		/*changed border color*/
-    border: 1px solid black;
-    border-radius: 0.25rem 0 0 0.25rem ;
-    max-width: 20rem;
-		/*increased speed*/
-    transition: .1s ease-out;
-    outline: none;
-}
-
-.search-input:active, .search-input:hover, .search-input:focus {
-	  /*changed border width, color*/
-    border: 2px solid black;
-    background: #FEE136;
-}
-
-.search-submit {
-    cursor: pointer;
-    height: 33px;
-    background: rgba(245, 245, 245, 0.9);
-    border-radius: 0 0.25rem 0.25rem 0;
-		/*changed border color*/
-    border: 1px solid black;
-		/*increased speed*/
-    transition: .1s ease-out;
-    outline: none;
-}
-
-.search-submit:active, .search-submit:hover, .search-submit:focus {
-    background: rgba(255, 255, 255, 0.9);
-		/*changed border width, color*/
-    border: 2px solid black;
+	/* color changed to white*/
+h3, p.card-text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
 
@@ -105,7 +81,7 @@ h1:hover {
     margin: 10px 10px 20px;
     padding: 10px;
 		/* Background changed */
-    background: src= '/images/bottomgeometric-background.png';
+    background:none; 
     /* Border radius */
     border-radius: 1em;
 		/* Border changed */
@@ -143,6 +119,9 @@ h1:hover {
 }
 
 
+
+
+
 /* =====================================
    Modal
 ======================================== */
@@ -164,7 +143,7 @@ h1:hover {
     margin: 10px auto auto;
     padding-bottom: 15px;
     /* Changed Background*/
-    background: src= '/images/geometric-background.png';
+    background: url('/images/geometric-background.png');
     border-radius: 1em;
 		/* Border changed */
     border: 3px solid white;
@@ -223,7 +202,7 @@ h1:hover {
     max-width: 420px;
     padding: 10px 15px 15px;;
     margin: 10px auto auto;
-    background: src= '/images/bottomgeometric-background.png';
+    background: url('/images/bottomgeometric-background.png');
     border-radius: 1em;
 		/* Border changed */
     border: 3px solid white;
@@ -246,9 +225,7 @@ h1:hover {
 		border: 2px solid white;
   }
 
-  input {
-background: src ='/images/bottomgeometric-background.png)';
-  }
+  
 
 
 /* =====================================
@@ -271,10 +248,6 @@ background: src ='/images/bottomgeometric-background.png)';
 
     .header-text-container {
         text-align: left;
-    }
-
-    .search-container {
-        margin-top: 25px;
     }
 
     .modal {

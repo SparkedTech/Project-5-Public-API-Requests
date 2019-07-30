@@ -3,14 +3,14 @@ let users = {
   cell: "cellphone",
   dob: {
     date: "Birthday",
-    age: 45
+    age: 32
   },
   email: "Email",
   location: {
     street: "Street",
     city: "City",
     state: "State",
-    postcode: 12345
+    postcode: 55555
   },
   name: {
     title: "Mr/Mrs",
